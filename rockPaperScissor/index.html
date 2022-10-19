@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TAŞ KAĞIT MAKAS</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="back">
+        <div id="back-animation">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            <div class="content">
+            </div>
+        </div>
+
+        <div id="play-ground">
+
+            <div id="head-div">
+                <div id="metamask-div">
+                    <div id="metamask-adress"></div>
+                    <button id="metamask-button">Connect</button>
+                </div>
+
+                <div id="head-clone-div">
+                    <div id="head">TAŞ KAĞIT MAKAS OYUNU</div>
+                    <div id="language-div">
+                        <button id="en-main"></button>
+                        <button id="tr-main"></button>
+                    </div>
+                </div>
+
+                <div id="wallet-div">
+                    <div id="wallet">Cüzdan: </div>
+                    <button id="transfer-button">Transfer</button>
+
+                </div>
+            </div>
+
+            <div id="main">
+                    <div id="choice-div">
+                        <div id="computer-div">
+                            <h1 class="text" id="com">Bilgisayar</h1>
+                            <button  id="com-choice-image"></button>
+                        </div>
+                        <div id="set-result">
+                            <h1 id="result">Set Sonucu</h1>
+                            <input  id="in-result" type="text" placeholder="" readonly/>
+                            
+                        </div>
+                        <div id="user-div">
+                            <h1 class="text" id="player">Oyuncu</h1>
+                            <div id="button-div">
+                                <button id="user-choice-image"></button>
+                                <div id="button-in-div">
+                                    <div id="button-first-row">
+                                        <button class="button" id="tas" value="tas"></button>
+                                        <button class="button" id="kagit" value="kagit"></button>
+                                    </div>
+                                    <div id="button-second-row">
+                                        <button class="button" id="makas" value="makas"></button>
+                                        <button class="button" id="giveup" value="giveup"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div id="general-result">
+                        <div id="com-result">
+                            <div id="com-number">0</div>
+                        </div>
+
+                        <div id="match-result-container">
+                            <h2 class="text" id="result-text">Maç Sonucu</h2>
+                            <input id="match-result" value="" placeholder="" readonly>
+                            <button class="button1" id="again" value="again" >Oyna</button>
+                        </div>
+                        
+                        <div id="user-result">
+                            <div id="user-number">0</div>
+                            
+                        </div>          
+                    </div>
+
+            </div>
+        </div>
+
+        <div id="parent-temp">
+            <div id="temp">
+                <div id="language">
+                    <button id="en" ></button>
+                    <button id="tr"></button>
+                </div>
+                <div id="player-name">
+                    <input id="name-input" type="text" placeholder="İsminizi Girin">
+                    <button id="temp-submit" ></button>
+                </div>
+            </div>
+            <div id="prize-page">
+                <div id="prize-amount-div">
+                    <div id="prize-text">Ödülünüz:</div>
+                    <div id="prize-amount">ABC</div>
+                </div>
+
+                <div id="claim-button-div">
+                    <button id="claim-button">Claim</button>
+                </div>
+            </div>
+            <div id="bet-page">
+                <div id="bet-top">
+                   <div id="bet-top-left">
+                       <div id="bet-text">Bahis Miktarı:</div>
+
+                       <div id="bet-amount-div">
+                        <div id="bet-amount">0</div>
+                       </div>
+                       
+                   </div>
+                   <div id="bet-top-right">
+                        <button id="increase-bet-button"></button>
+                   </div> 
+                </div>
+
+                <div id="bet-bottom">
+                    <div id="bet-bottom-left">
+                        <div id="estimated-prize-text">Ödül Miktarı</div>
+
+                        <div id="estimated-prize-amount-div">
+                            <div id="estimated-prize-amount">0</div>
+                        </div>
+
+                    </div>
+                   <div id="bet-bottom-right">
+                        <button id="decrease-bet-button"></button>
+                   </div>
+                </div>
+
+                <div id="bet-submit-div">
+                    <button id="bet-submit-button">Bahsi Onayla</button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+<script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+></script>
+<script src="js/variables.js"></script>
+<script src='js/main_page.js'></script>
+<script src='js/temp_page.js'></script>
+<script src="js/prize_page.js"></script>
+<script src="js/blockchainBridge.js"></script>
+<script src="js/bet_page.js"></script>
+</html>
